@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+<h1 align="center">Welcome User!</h1>
+<h2 align="center">Take a small tour!!!</h2>
+<style>
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+</style>
+<body>
+
+
+
+
+
+<div class="navbar">
+  <a class="active" href="http://localhost:8081/Tourism/tourism.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+  <a href="http://localhost:8081/Tourism/viewplaces.html"><i class="fa fa-fw fa-search"></i>View_Places</a> 
+  <a href="http://localhost:8081/Tourism/ChngPass.html"><i class="fa fa-fw fa-search"></i>Change_Password</a>
+  <a href="http://localhost:8081/Tourism/complain.html"><i class="fa fa-fw fa-search"></i>Complain</a>
+   <a href="http://localhost:8081/Tourism/logout.html"><i class="fa fa-fw fa-search"></i>Logout</a>
+   <a href="http://localhost:8081/Tourism/MakeOrder.html"><i class="fa fa-fw fa-search"></i>Make_order</a>
+   <a href=http://localhost:8081/Tourism/cncl.html"><i class="fa fa-fw fa-search"></i>Cancel_order</a>
+  
+  
+  
+</div>
+<!-- Slide Show -->
+<section>
+  
+  <img class="mySlides" src="to.jpg" style="width:100%">
+  <img class="mySlides" src="t2.jpg" style="width:100%">
+  
+  
+  
+  
+</section>
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+</head>
+
+</body>
+</html>
